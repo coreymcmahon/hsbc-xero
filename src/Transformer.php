@@ -1,6 +1,5 @@
 <?php namespace Slashnode\HsbcXero;
 
-use League\Csv\Writer;
 
 class Transformer
 {
@@ -22,8 +21,7 @@ class Transformer
     {
         $buffer = '';
 
-        foreach ($this->hsbc_csv->process() as $row)
-        {
+        foreach ($this->hsbc_csv->process() as $row) {
             $buffer .= sprintf("%s,%s,%s\n", $row->date, $row->description, $row->amount);
         }
 
