@@ -1,0 +1,22 @@
+{
+    "name": "coreymcmahon/hsbc-xero",
+    "description": "Transforms HSBC csv files into something Xero can use.",
+    "keywords": ["hsbc", "xero"],
+    "license": "MIT",
+    "require": {
+        "league/csv": "6.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "phpspec/phpspec": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slashnode\\HsbcXero\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable"
+}
